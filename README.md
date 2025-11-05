@@ -4,7 +4,7 @@ A fully functional web-based Tetris game built with Vanilla JavaScript and Canva
 
 ## Play Now
 
-🎮 **[Play the game here!](https://[YOUR-USERNAME].github.io/tetris-game/)**
+🎮 **[Play the game here!](https://embrain82.github.io/tetris-game/)**
 
 ## Features
 
@@ -56,7 +56,7 @@ A fully functional web-based Tetris game built with Vanilla JavaScript and Canva
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[YOUR-USERNAME]/tetris-game.git
+git clone https://github.com/embrain82/tetris-game.git
 cd tetris-game
 ```
 
