@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>TETRIS</h1>
+        </header>
+
+        <div class="game-wrapper">
+            <div class="side-panel left">
+                <div class="panel-section">
+                    <h3>HOLD</h3>
+                    <canvas id="holdCanvas" width="120" height="120"></canvas>
+                </div>
+                <div class="panel-section">
+                    <h3>SCORE</h3>
+                    <p id="score">0</p>
+                </div>
+                <div class="panel-section">
+                    <h3>LEVEL</h3>
+                    <p id="level">1</p>
+                </div>
+                <div class="panel-section">
+                    <h3>LINES</h3>
+                    <p id="lines">0</p>
+                </div>
+                <div class="panel-section hint-section">
+                    <h3>HINTS</h3>
+                    <p id="hints">5</p>
+                    <small>Press H</small>
+                </div>
+            </div>
+
+            <div class="game-area">
+                <canvas id="gameCanvas" width="300" height="600"></canvas>
+                <div id="gameOverlay" class="overlay hidden">
+                    <div class="overlay-content">
+                        <h2 id="overlayTitle">TETRIS</h2>
+                        <p id="overlayMessage">Press SPACE to start</p>
+                        <div id="overlayButtons"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-panel right">
+                <div class="panel-section">
+                    <h3>NEXT</h3>
+                    <canvas id="nextCanvas1" width="120" height="120"></canvas>
+                    <canvas id="nextCanvas2" width="120" height="120"></canvas>
+                    <canvas id="nextCanvas3" width="120" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-info">
+            <h3>Controls</h3>
+            <p>← → : Move | ↑ W : Rotate | ↓ S : Soft Drop | Space : Hard Drop | C/Shift : Hold | H : Hint | P/ESC : Pause | R : Restart (in Pause)</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
